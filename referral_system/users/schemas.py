@@ -51,7 +51,7 @@ AvailableOrderBy = Literal['id', 'username']
 
 class UserListRequest(BaseModel):
     page: int = 1
-    limit: int = 10
+    limit: int = Field(default=10, ge=1)
     order_by: AvailableOrderBy = 'id'
 
 
