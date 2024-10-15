@@ -16,6 +16,7 @@ repos:
         -   --unsafe
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+        exclude: 'README.md'
 -   repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.5.1
     hooks:

@@ -47,7 +47,7 @@ SqlAlchemy, Alembic, Asyncpg, Redis, Docker.
 git clone https://github.com/ReYaNOW/referral-system-api.git
 ```
 
-2. Переименовать .env.example в .env .
+2. Переименовать .env.example в .env .  
    [Опционально] Указать HUNTERIO_API_KEY для использования
 валидации email (его можно найти [тут](https://hunter.io/api-keys))
 
@@ -81,7 +81,7 @@ git clone https://github.com/ReYaNOW/referral-system-api.git
 make install
 ```
 
-3. Переименовать .env.example в .env .
+3. Переименовать .env.example в .env .  
    [Опционально] указать другие database url и redis_url для использования уже работающих БД.
 
    [Опционально] Указать HUNTERIO_API_KEY для использования
