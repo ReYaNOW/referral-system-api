@@ -1,0 +1,16 @@
+.venv/
+.idea/
+.vscode/
+.github/
+.devcontainer/
+**/__pycache__/
+staticfiles/
+htmlcov/
+
+.python-version
+*.sqlite3
+*.bak
+**/*.mo
+.coverage
+.mypy_cache
+.ruff_cache
