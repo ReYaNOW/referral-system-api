@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "referral-system-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "referral_system"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = {extras = ["standard"], version = "0.115"}
+pydantic-settings = "^2.5.2"
+sqlalchemy = "^2.0.35"
+asyncpg = "^0.29.0"
+alembic = "^1.13.3"
+pyjwt = "^2.9.0"
+passlib = {extras = ["argon2"], version = "^1.7.4"}
+email-validator = "^2.2.0"
+redis = "^5.1.1"
+parse = "^1.20.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+exclude = ["migrations/versions/*.py", "migrations/env.py"]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ['D1', 'FA102', 'RET504', 'COM812', 'ISC001', 'ANN204', 'PLR0913',
+          'PYI051', 'ANN401', 'RET503', 'TCH001', 'D203', 'D213']
+# D Missing docstrings
+# FA102 Missing `from __future__ import annotations`, but uses PEP 585 collection
+# RET504 Unnecessary assignment to ... before `return` statement
+# COM812 Trailing comma missing
+# ISC001 (ruff formatter not working with it)
+# TRY003 Avoid specifying long messages outside the exception class
+# ANN204 Missing return type annotation for special method `__init__`
+# PLR0913 Too many arguments in function definition
+# PYI051 `Literal['present']` is redundant in a union with `str`
+# ANN401 Dynamically typed expressions (typing.Any) are disallowed in ...
+# RET503 Missing explicit `return` at the end of function able to return non-`None` value
+# TCH001 Move application import `car_wash.users.models.User` into a type-checking block
+
+# warning: `one-blank-line-before-class` (D203) and `no-blank-line-before-class`
+# (D211) are incompatible. Ignoring `one-blank-line-before-class`.
+
+# warning: `multi-line-summary-first-line` (D212) and `multi-line-summary-second-line`
+# (D213) are incompatible. Ignoring `multi-line-summary-second-line`.
+
+[tool.ruff.lint.per-file-ignores]
+"router.py" = ["ANN201"]
+"exception_handling.py" =["PERF401"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["id"]
+
+[tool.ruff.format]
+quote-style = "single"
