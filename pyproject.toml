@@ -58,7 +58,8 @@ ignore = ['D1', 'FA102', 'RET504', 'COM812', 'ISC001', 'ANN204', 'PLR0913',
 
 [tool.ruff.lint.per-file-ignores]
 "router.py" = ["ANN201"]
-"exception_handling.py" =["PERF401"]
+"exception_handling.py" = ["PERF401"]
+"service.py" = ["S113"]
 
 [tool.ruff.lint.flake8-quotes]
 inline-quotes = "single"
