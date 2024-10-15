@@ -83,7 +83,6 @@ make install
 
 3. Переименовать .env.example в .env .  
    [Опционально] указать другие database url и redis_url для использования уже работающих БД.
-
    [Опционально] Указать HUNTERIO_API_KEY для использования
 валидации email (его можно найти [тут](https://hunter.io/api-keys))
 
