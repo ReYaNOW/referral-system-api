@@ -1,4 +1,5 @@
-[![Linter check](1https://github.com/ReYaNOW/avito-tech-test-task/actions/workflows/pyci.yml/badge.svg)](https://github.com/ReYaNOW/avito-tech-test-task/actions/workflows/pyci.yml)
+![Linter check](https://github.com/ReYaNOW/referral-system-api/actions/workflows/pyci.yml/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3e584ceffbfdf7053f36/maintainability)](https://codeclimate.com/github/ReYaNOW/referral-system-api/maintainability)
 
 # RESTful API для реферальной системы
 
@@ -29,12 +30,12 @@
 SqlAlchemy, Alembic, Asyncpg, Redis, Docker.
 
 ## Документация
-Открыть Swagger документацию можно по [ссылке111111111111111111111](https://test-task-avito-tech.onrender.com/docs)
+Открыть Swagger документацию можно по [ссылке](https://test-referral-system-api.onrender.com/docs)  
 Там же можно поделать запросы к API
 
 # Использование
 
- - Открыть задеплоенный [тестовый варasdasdasdadsasdasdиант](1https://avito-tech-test-task.onrender.com)
+ - Открыть задеплоенный [тестовый вариант](https://test-referral-system-api.onrender.com/docs)
  - [Развернуть весь сервис в Docker](#Как-развернуть-весь-сервис-в-Docker)
  - [Развернуть сервис с Redis и PostgreSQL в Docker (для разработки)](#как-развернуть-сервис-с-redis-и-postgresql-в-docker-для-разработки)
 
