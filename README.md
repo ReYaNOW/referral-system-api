@@ -97,7 +97,7 @@ mv .env.example .env
 docker compose up -d --remove-orphans
 ```
 
-5. Запустить сервер и открыть http://127.0.0.1:8080/docs
+5. Запустить сервер и открыть http://127.0.0.1:8000/docs
 
 ```
 make dev
